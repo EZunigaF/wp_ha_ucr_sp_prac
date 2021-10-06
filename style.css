@@ -1,0 +1,214 @@
+/*
+Theme Name: UCR 2021
+Author: Universidad de Costa Rica
+Description: UCR Web site
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.6
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: UCR2021
+*/
+:root {
+    --celeste-ucr: #41ADE7;
+    --azul-principal: #0B71B5;
+    --azul-oscuro: #204C6F;
+    --gris-fondo: #F8F9FA;
+    --footer-bg: #666666;
+}
+
+body {
+    background-color: var(--gris-fondo);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+.buscador {
+    border-radius: 50px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.buscador-icon {
+    border-radius: 50px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.buscador-container {
+    margin: 1rem 0;
+    margin-top: .5rem;
+}
+.buscador-container {
+    height: calc(2.25rem + 2px);
+}
+.navbar-collapse ul.navbar-nav{
+    text-align: end;
+    min-width: 10rem;
+}
+.borde-der {
+    border-right: none;
+}
+.borde-abj {
+    border-bottom: outset;
+} 
+.logo img {
+    width: 100%;
+}
+.logo {
+    padding-top: .5rem;
+}
+
+li.active > a > span{
+    background-color: #0B71B5;
+    font-weight: 700;
+}
+
+li .active{
+    background-color: #0B71B5;
+    font-weight: 700;
+
+
+}
+
+/* BANNER */
+.carousel {
+    width: 100vw;
+}
+
+
+/* seccion noticia */
+.noticia h2,
+.actividad h2 {
+    font-size: 2.2rem;
+}
+.enlaces a {
+    color: black;
+    text-decoration: none;
+}
+.noticia-img {
+    width: 100%;
+}
+.titulo-seccion {
+    text-align: center;
+}
+
+/* seccion actividades */
+.actividad-contenedor {
+    background-color: var(--celeste-ucr);
+    color: white;
+    border-radius: 2rem!important;
+    box-shadow: 2px 6px 8px var(--footer-bg);
+    border:none;
+}
+.actividad-texto {
+    font-weight: bold;
+    align-self: center;
+}
+.fecha {
+    background-color: var(--azul-principal);
+    color: white;
+    margin-right: .8rem;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+    padding: .5rem;
+    padding-top: 0.2rem;
+    font-size: .75rem;
+}
+.fecha span {
+    align-self: center;
+}
+.actividad-img {
+    width: 100%;
+}
+
+/* Post */
+.postFondo{
+
+    background-color:white;
+    margin-top: 3rem!important;
+}
+
+.postTitulo {
+    background-color: #84C0E5;
+    color: white;
+    border-radius: 5rem!important;
+    font-size: 1.5rem;
+}
+
+.postContenido {
+    border:none;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg);
+}
+.footer-item,
+.footer-item:hover {
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+    padding: .4rem 1rem;
+}
+.info-extra {
+    margin: 0 auto;
+    color: white;
+    font-size: .8rem;
+    text-align: center;
+}
+
+/* busquedas */
+.resultados {
+    padding-left: 10%;
+   
+}
+
+.resultado {
+    border-radius: 25px;
+    margin-bottom: 2%;
+}
+
+.paginado {
+    display: flex;
+    justify-content: center;
+    justify-content: bottom;
+
+}
+
+.alineado {
+    border-top-width: initial!important;
+}
+.no-borde {
+    border-top-width: 1px!important;
+}
+
+@media (min-width: 992px) {
+    .borde-der {
+        border-right: outset;
+    }
+    .borde-abj {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .alineado {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .noticia h2,
+    .actividad h2 {
+        font-size: 1.75rem;
+    }
+
+    .actividad {
+        margin-top: -3rem;
+    }
+}
